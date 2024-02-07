@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atlant-gaz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&family=Russo+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+      <div class="container">
+        <div class="header__items">
+          <div class="logo">
+           <a class="logo__img" href="#">
+             <img src="images/Logo.svg" alt="logo">
+           </a>
+          </div>  
+           <a class="call-number" href="tel:+79263306834">+7 926 330-68-34</a>
+        </div>
+      </div>
+    </header>
+    <section class="intro">
+      <div class="container">
+       <ul class="intro__info">
+         <li class="intro__conditions">
+          <span class="anytime">В любое время дня и ночи</span>
+          <span class="anyweather">Вне зависимости от погодных условий</span>
+         </li>
+         <li class="intro__title">
+           <h1>Доставим газ за 4 часа</h1> 
+         </li>
+         <li class="intro__subtitle">
+           <h3>в любую точку  Москвы и Московской области</h3>
+         </li>
+       </ul>
+      <button class="intro__btn" data-modal="#modal">Заказать доставку газа
+      в газгольдер</button>
+      </div>
+    </section>
+    <section class="price">
+     <div class="container">
+      <h2 class="price__title">Стоимость газа в ваш газгольдер сегодня</h2>
+      <div class="price__cards">
+        <div class="price__card">
+          <h3 class="price__card-title">Пропан</h3>
+          <h4 class="price__card-subtitle">от 25 рублей за литр</h4>
+          <p class="price__card-text">Физически испарение происходит до -40 градусов, что позволяет использовать его в наших с вами погодных условиях</p>
+          <button class="price__card-btn">Заказать</button>
+        </div>
+        <div class="price__card price__card-middle">
+          <h3 class="price__card-middle__title">Идеальное соотношение</h3>
+          <ul class="percent">
+            <li class="percent__propan">80%</li>
+            <li class="percent__butan">20%</li>
+          </ul>
+          <div class="price__card-middle__img">
+            <img class="price__card-middle__image" src="images/cards-image.png" alt="image">
+          </div> 
+        </div>
+        <div class="price__card">
+          <h3 class="price__card-title">Бутан</h3>
+          <h4 class="price__card-subtitle">от 16 рублей за литр</h4>
+          <p class="price__card-text">Испарение Бутана происходит только до 0 градусов и годится для использования в тёплое время года</p>
+          <button class="price__card-btn">Заказать</button>
+        </div>
+      </div>
+      <div class="pagination">
+          <img class="arrow-page" src="images/arrow1.svg" alt="page">
+      </div>
+     </div>
+    </section> 
+    <section class="advantage">
+     <div class="container">
+      <h2 class="advantage__title">Преимущества работы с нашей компанией</h2>
+      <div class="advantage__cards">
+       <div class="advantage__card">
+        <div class="advantage__card-title">Экономия на хранилище</div>
+        <img class="advantage__card-image" src="images/advant-pics/1.png" alt="photo">
+        <p class="advantage__card-text">за счёт собственных цистерн на нашей базе</p>
+       </div>
+       <div class="advantage__card">
+        <div class="advantage__card-title">Экономия на транспорте</div>
+        <img class="advantage__card-image" src="images/advant-pics/2.png" alt="photo">
+        <p class="advantage__card-text">более 10 собственный газовозов</p>
+       </div>
+       <div class="advantage__card">
+        <div class="advantage__card-title">Поставки напрямую от производителей</div>
+        <img class="advantage__card-image" src="images/advant-pics/3.png" alt="photo">
+        <p class="advantage__card-text">нет наценки на стоимость газа как у перекупщиков и небольших частных компаний</p>
+       </div>
+       <div class="advantage__card">
+       <div class="advantage__card-title">Любые объёмы поставки качественного газа</div>
+        <img class="advantage__card-image" src="images/advant-pics/4.png" alt="photo">
+        <p class="advantage__card-text">вы получаете объем от 1 тонны до 20 тонн, с сертификатом качества газа</p>
+       </div>
+       <div class="advantage__card">
+        <div class="advantage__card-title">Оплата удобным для вас способом</div>
+        <img class="advantage__card-image" src="images/advant-pics/5.png" alt="photo">
+        <p class="advantage__card-text">все газовозы оснащены терминалами для оплаты вашего заказа</p>
+       </div>
+       <div class="advantage__card">
+        <div class="advantage__card-title">Чистый газ без примесей</div>
+        <img class="advantage__card-image" src="images/advant-pics/6.png" alt="photo">
+        <p class="advantage__card-text">нет наценки на стоимость газа как у перекупщиков и небольших частных компаний</p>
+       </div>
+       <div class="advantage__card">
+        <div class="advantage__card-title">Длина заправочных рукавов — 50 метров</div>
+        <img class="advantage__card-image" src="images/advant-pics/7.png" alt="photo">
+        <p class="advantage__card-text">за счёт собственных цистерн на нашей базе</p>
+       </div>
+       <div class="advantage__card">
+        <div class="advantage__card-title">Доставка сжиженного газа в формате 24/7</div>
+        <img class="advantage__card-image" src="images/advant-pics/8.png" alt="photo">
+        <p class="advantage__card-text">привезем газ в удобное для вас время или же  по графику</p>
+       </div>
+       <div class="advantage__card">
+        <div class="advantage__card-title">Аттестованный персонал</div>
+        <img class="advantage__card-image" src="images/advant-pics/9.png" alt="photo">
+        <p class="advantage__card-text">квалифицированные сотрудники проведут полную консультацию и дадут рекомендации, если такие нужны будут</p>
+       </div>
+      </div>
+     <div class="advantage__box">
+      <img class="advantage__box-image" src="images/box-image.png" alt="picture">
+      <div class="advantage__box-content">
+        <h2 class="advantage__box-title">Благодаря нашему собственному автопарку мы можем
+          давать гарантию, что доставим <span>за 4 часа</span></h2>
+        <p class="advantage__text">Это сильное конкурентное преимущество, которым мы дорожим</p>
+      </div>
+     </div>
+    </div>
+   </section> 
+   <section class="order">
+    <div class="container">
+     <h2 class="order__title">Выберите свой объём Газовоза</h2>
+     <div class="order__slider">
+      <div class="order__slider-item">
+        <img class="order__slider-img" src="images/order/01.png" alt="image">
+      </div>
+      <div class="order__slider-item">
+        <img class="order__slider-img" src="images/order/02.png" alt="image">
+      </div>
+      <div class="order__slider-item">
+        <img class="order__slider-img" src="images/order/03.png" alt="image">
+      </div>
+      <div class="order__slider-item">
+        <img class="order__slider-img" src="images/order/04.png" alt="image">
+      </div>
+     </div>
+     <button class="order-btn" data-modal="#modal">Заказать газ</button>
+    </div>
+   </section>
+   <section class="reviews">
+    <div class="container">
+    <h2 class="reviews__title">Отзывы наших клиентов</h2>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img class="swiper-slide__image" src="images/rewievs/rew1.png" alt="#">
+          <ul class="swiper-slide__content">
+              <li><h3 class="swiper-slide__title">Ольга И.</h3></li> 
+              <li><h4 class="swiper-slide__subtitle">Красногорск</h4></li> 
+              <li><p class="swiper-slide__text">Я  всегда боюсь газа , а особенно боюсь что он может взорваться, как же мне помог Андрей водитель-экспедитор показал что бояться тут нечего и самое главное моего присутствие даже не понадобится.</p></li> 
+          </ul>
+        </div>
+        <div class="swiper-slide">
+          <img class="swiper-slide__image" src="images/rewievs/rew2.png" alt="#">
+          <ul class="swiper-slide__content">
+              <li><h3 class="swiper-slide__title">Сергей В.</h3></li> 
+              <li><h4 class="swiper-slide__subtitle">Мытищи</h4></li> 
+              <li><p class="swiper-slide__text">Боялся что машина не сможет доехать до моего дома из-за разбитой дороги осенью и то что попортит ещё и участок с газоном, но Атлант-газ отправили машину с длинным шлангом и даже не заехали на газон, 45 минут и полный газгольдер.</p></li> 
+          </ul>
+        </div>
+        <div class="swiper-slide">
+          <img class="swiper-slide__image" src="images/rewievs/rew3.png" alt="#">
+          <ul class="swiper-slide__content">
+              <li><h3 class="swiper-slide__title">Ольга И.</h3></li> 
+              <li><h4 class="swiper-slide__subtitle">Красногорск</h4></li> 
+              <li><p class="swiper-slide__text">Я  всегда боюсь газа , а особенно боюсь что он может взорваться, как же мне помог Андрей водитель-экспедитор показал что бояться тут нечего и самое главное моего присутствие даже не понадобится.</p></li> 
+          </ul>
+        </div>
+        <div class="swiper-slide">
+          <img class="swiper-slide__image" src="images/rewievs/rew3.png" alt="#">
+          <ul class="swiper-slide__content">
+            <li>
+              <h3 class="swiper-slide__title">Екатерина У.</h3>
+            </li>
+            <li>
+              <h4 class="swiper-slide__subtitle">Зеленоград</h4>
+            </li>
+            <li>
+              <p class="swiper-slide__text">Были в отпуске с мужем и совсем забыли, о том что необходимо было заправиться, нашли только одну компанию которая работала в праздничные дни. Вячеслав спасибо что помогли быстро решить проблему в столь короткие сроки.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper-slide">
+          <img class="swiper-slide__image" src="images/rewievs/rew3.png" alt="#">
+          <ul class="swiper-slide__content">
+            <li>
+              <h3 class="swiper-slide__title">Евгений С.</h3>
+            </li>
+            <li>
+              <h4 class="swiper-slide__subtitle">Орехово-Зуево</h4>
+            </li>
+            <li>
+              <p class="swiper-slide__text">Заправился и получил бесплатное обслуживание оборудования и поставили телеметрию. Валера лучший инженер в Атлант-газе.</p>
+            </li>
+          </ul>
+         </div> 
+        </div> 
+       </div>
+      <div class="swiper-btn">
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+   </section>
+   <section class="questions">
+    <div class="container">
+    <h2 class="questions__title">Ответы на часто задаваемые вопросы</h2>
+    <div class="questions__items">
+      <button class="accordion"><span>Есть ли у вас инженеры в компании?</span></button>
+      <div class="panel">
+        <p>Да, инженеры делают предварительный осмотр вашего газгольдера и дают рекомендации.</p>
+      </div>
+      <button class="accordion"><span>Делаете ли вы отчистку газгольдера?</span></button>
+      <div class="panel">
+        <p>Если это необходимо то мы делаем.</p>
+      </div>
+      <button class="accordion"><span>А вы не испортите газон у меня и соседей?</span></button>
+      <div class="panel">
+        <p>За счёт длинны в 50 м. делаем заправку не заезжая и не портим газон, а так же не мешаем соседям</p>
+      </div>
+      <button class="accordion"><span>Вы предоставляете документы для субсидий?</span></button>
+      <div class="panel">
+        <p>Все необходимые документы мы предоставляем.</p>
+      </div>
+      <button class="accordion"><span>Смогу ли я заказать во время праздников?</span></button>
+      <div class="panel">
+        <p>В праздничные дни наша компания тоже работает.</p>
+      </div>
+     </div>
+    </div>
+   </section>
+   <div class="communicate">
+     <div class="container">
+      <div class="communicate__items">
+       <div class="communicate__item">
+        <h2 class="communicate__item-title">Не нашли ответа на свой вопрос задайте их нашему специалисту</h2>
+        <form class="communicate__form">
+          <input class="name" type="text" placeholder="имя">
+          <input class="phone" data-tel-input placeholder="Телефон" maxlength="18" placeholder="Телефон" required>
+          <textarea class="question" placeholder="ваш вопрос" cols="30" rows="5" required></textarea>
+          <button class="communicate__form-btn">Задать вопрос</button>
+        </form>
+       </div>
+       <div class="communicate__item">
+        <div class="communicate__pic">
+          <img class="communicate__image" src="images/manager.png" alt="image">
+          <p class="communicate__image-name">Роман Ш.<br><span>Старший менеджер</span></p>
+        </div>
+       </div>
+      </div>
+    </div>
+   </div>
+   <div class="partners">
+    <div class="container">
+      <div class="partners__items">
+        <img class="partners__item" src="images/partner1.svg" alt="images">
+        <img class="partners__item" src="images/partner2.svg" alt="images">
+        <img class="partners__item" src="images/partner3.svg" alt="images">
+        <img class="partners__item" src="images/partner4.svg" alt="images">
+        <img class="partners__item" src="images/partner5.svg" alt="images">
+        <img class="partners__item" src="images/partner6.svg" alt="images">
+      </div>
+      <div class="partners__bonus">
+        <h2 class="partners__title">Закажи прямо сейчас и получи<br>
+          бесплатную установку телеметрии﻿</h2>
+        <button class="order-btn" data-modal="#modal">Заказать газ</button>
+      </div>
+    </div>
+   </div>
+   <footer class="footer">
+    <div class="contact">
+     <div class="container">
+       <div class="contact__items">
+        <div class="contact__item">
+          <h2 class="contact__title">Посетите наш<br> уютный офис</h2>
+          <p class="contact__text">где мы сможем вас полностью<br>
+          проконсультировать по всем вопросам</p>
+          <p class="contact__place">Офис</p>
+          <address class="contact__address">Видное , Белокаменное шоссе, 20</address>
+          <p class="contact__phone">Телефон:</p>
+          <p class="contact__number">
+          <a href="tel:+79263306834">+7 926 330-68-34</a>
+          </p> 
+        </div>
+        <div class="contact__item">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2257.1341083982693!2d37.769991976552106!3d55.547450307789674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab0113b926911%3A0x38d9302dbc9b7c87!2z0JHQtdC70L7QutCw0LzQtdC90L3QvtC1INGILiwgMjAsINCS0LjQtNC90L7QtSwg0JzQvtGB0LrQvtCy0YHQutCw0Y8g0L7QsdC7LiwgMTQyNzAz!5e0!3m2!1sru!2sru!4v1689498817484!5m2!1sru!2sru"
+             style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <ul class="politics">
+        <li class="politics__item">
+         <a class="politics__link" href="#">Политика конфиденциальности</a>
+        </li>
+        <li class="politics__item">
+         <a class="politics__link" href="#">Согласие на обработку персональных данных</a>
+        </li>
+      </ul>
+     </div>
+    </div>
+   </footer>
+   <div class="modal" id="modal">
+       <div class="modal__dialog">     
+            <div class="modal__content">
+              <button class="modal-close" type="button" data-close="#modal">
+                  <img src="images/modal-close.svg" alt="Close">
+              </button>  
+              <h3 class="modal__title">Доставим газ за 4 часа</h3>
+                <form class="modal__form" action="email">  
+                  <input class="name" type="text" placeholder="имя">
+                  <input type="tel" class="phone" data-tel-input placeholder="Телефон" maxlength="18" required>
+                  <button class="modal__form-btn">Заказать доставку газа</button>
+                </form>
+            </div>  
+       </div>  
+   </div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+   <script src="swiper/swiper-bundle.min.js"></script>
+   <script src="slick/slick.min.js"></script>
+	 <script src="js/app.js"></script>			
+</body>
+</html>
