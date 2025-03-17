@@ -111,8 +111,6 @@ textarea,
 select {
   font: inherit;
 }
-
-/* font-family: 'Open Sans', sans-serif; */
 .container{
   max-width: 1170px;
   margin: 0 auto;
@@ -120,7 +118,6 @@ select {
 }
 .header{
   padding-top: 24px;
-  /* margin-bottom: 65px; */
 }
 .header__items{
   display: flex;
@@ -148,6 +145,7 @@ select {
   position: absolute;
 }
 .call-number{
+  margin-top: 42px;
   height: 25px;
   font-weight: 400;
   font-size: 24px;
@@ -171,15 +169,8 @@ select {
   position: absolute;
 }
 .intro{
-  /* width: 100%;
-  max-width: 100%;
-  overflow-x: hidden; */
-  /* min-width: 1350px; */
   padding-top: 80px;
   padding-bottom: 7%;
-  /* background-image: url(../images/intro-bg.png);
-  background-repeat: no-repeat;
-  background-position: top 0 right -13em; */
 }
 .intro__info{
   width: 100%;
@@ -195,7 +186,6 @@ select {
   z-index: 1;
   position: absolute;
   overflow: hidden;
-  /* display: none; */
 }
 .intro__conditions{
   margin-bottom: 12px;
@@ -406,7 +396,6 @@ select {
   font-size: 36px;
   line-height: 43px;
   color: rgba(241, 241, 241, .7);
-  /* position: relative; */
 }
 .percent__propan,
 .percent__butan{
@@ -442,7 +431,6 @@ select {
 .arrow-page{
   display: block;
   margin: 0 auto;
-  
 }
 .pagination:before{
   content: url(../images/arrow2.svg);
@@ -653,7 +641,6 @@ select {
 .swiper {
   margin-bottom: 30px;
   max-width: 859px;
-  /* max-height: 380px; */
   border-radius: 30px;
 }
 .swiper-slide{
@@ -797,12 +784,13 @@ select {
 }
 .communicate__items{
   margin: 40px 30px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
 }
 .communicate__item{
-  max-width: 50%;
-  margin-right: 30px;
+  margin: 0 auto;
+  max-width: 550px;
 }
 .communicate__item-title{
   margin-bottom: 30px;
@@ -815,7 +803,7 @@ select {
   margin: 25px 0;
   padding: 20px;
   display: block;
-  width: 77%;
+  width: 90%;
   border-radius: 10px;
   font-family: Open Sans;
   font-size: 12px;
@@ -845,9 +833,6 @@ select {
 }
 .communicate__pic{
   position: relative;
-}
-.communicate__image{
-  margin-top: -20px;
 }
 .communicate__image-name{
   padding: 15px 20px;
@@ -898,7 +883,6 @@ select {
 }
 .contact__item:first-child{
   padding: 40px 35px;
-  /* width: 50%; */
 }
 iframe{
   border-top-right-radius: 25px;
@@ -942,7 +926,6 @@ iframe{
   font-weight: 400;
   line-height: 25px;
   color: rgba(27, 38, 57, 1);
-;
 }
 .contact__phone{
   line-height: 25px;
@@ -987,7 +970,7 @@ iframe{
   z-index: 1001;
 }
 .show {
-    display: flex;
+  display: flex;
 }
 .modal__dialog {
   padding: 30px 30px 35px;
@@ -1078,7 +1061,7 @@ iframe{
     grid-column: span 2;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
 
   .intro:after{
     top: 42em;
@@ -1132,9 +1115,9 @@ iframe{
     width: 80%;
   }
   .advantage__box-title{
-      font-size: 30px;
-      line-height: 32px;
-    }
+    font-size: 30px;  
+    line-height: 32px;
+  }
   .advantage__box-content{
     max-width: 628px;
     margin: 0 auto;
@@ -1142,10 +1125,16 @@ iframe{
   .swiper-btn{
     display: none;
   }
-  .communicate__form input,
-  .communicate__form textarea{
-    width: 90%;
+  .communicate__items{
+    margin: 40px 30px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 30px;
   }
+  .communicate__form input,
+    .communicate__form textarea{
+      width: 100%;
+    }
 }
 @media (max-width: 816px){
     .slick-dots{
@@ -1154,13 +1143,6 @@ iframe{
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
       top: 0;
-    }
-    .communicate__items{
-      flex-wrap: wrap;
-    }
-    .communicate__item{
-      margin: 0 auto;
-      max-width: 70%;
     }
     .partners__items{
       grid-template-columns: repeat(3, 1fr);
@@ -1255,6 +1237,7 @@ iframe{
     }
     .swiper-slide__content{
       margin: 25px;
+      min-height: 250px;
     }
     .partners__items{
       margin: 10px;
@@ -1301,7 +1284,7 @@ iframe{
     .communicate__item-title,
     .partners__title,
     .contact__title{
-      font-size: 30px;
+      font-size: 26px;
       line-height: 35px;
     }
     .advantage__box-title{
@@ -1316,6 +1299,10 @@ iframe{
     }
     .communicate__items{
       margin: 0;
+      margin-bottom: 30px;
+    }
+    .communicate__image-name{
+      left: 0;
     }
     .partners__items{
       margin: 0;
